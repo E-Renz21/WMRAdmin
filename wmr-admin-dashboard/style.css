@@ -109,3 +109,130 @@ body {
   color: #666;
   line-height: 1.6;
 }
+
+/* Exact Delivery Requests Table Styling */
+.delivery-requests {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.requests-table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.requests-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 12px 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.requests-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.requests-table tr:last-child td {
+  border-bottom: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.more-btn, .approve-btn, .reject-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.more-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.approve-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Exact text styling from image */
+.requests-table td:nth-child(7) {
+  font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.details-container {
+  margin-top: 20px;
+}
+
+.detail-row {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.detail-label {
+  font-weight: bold;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  flex: 1;
+}
